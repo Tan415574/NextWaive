@@ -3,190 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextWaive Digital Solutions | AI & Automation</title>
+    <title>NextWaive | Tanit Ansara - Digital Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .ai-accent { color: #00d4ff; text-shadow: 0 0 10px rgba(0, 212, 255, 0.3); }
-        .nav-link { cursor: pointer; transition: color 0.3s; }
-        .nav-link:hover { color: #00d4ff; }
-        .page-section { display: none; }
-        .active-section { display: block; animation: fadeIn 0.5s ease-in; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .pricing-table tr:nth-child(even) { background-color: #f8fafc; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .ai-accent { color: #0ea5e9; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .hero-text { line-height: 1.1; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-white text-slate-900">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-800 tracking-tighter text-slate-900 cursor-pointer" onclick="showPage('home')">
+            <div class="text-2xl font-800 tracking-tighter font-bold">
                 Next<span class="ai-accent">Waive</span>
             </div>
-            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wide">
-                <span class="nav-link" onclick="showPage('home')">Home</span>
-                <span class="nav-link" onclick="showPage('about')">About</span>
-                <span class="nav-link" onclick="showPage('portfolio')">Portfolio</span>
-                <span class="nav-link" onclick="showPage('services')">Services</span>
-                <span class="nav-link" onclick="showPage('contact')">Contact</span>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm">
+                <a href="#about" class="hover:text-sky-600 transition">About</a>
+                <a href="#package" class="hover:text-sky-600 transition">Main Package</a>
+                <a href="#portfolio" class="hover:text-sky-600 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
             </div>
-            <a href="https://wa.me/yournumber" class="bg-slate-900 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-cyan-600 transition">Free Demo</a>
+            <a href="https://wa.me/27784898868" class="bg-sky-500 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-sky-600 transition shadow-lg shadow-sky-200">WhatsApp Me</a>
         </div>
     </nav>
 
-    <main id="home" class="page-section active-section">
-        <header class="py-24 px-6 text-center max-w-5xl mx-auto">
-            <h1 class="text-6xl md:text-8xl font-black mb-8 leading-tight">Future-proof your business with websites, <span class="ai-accent">AI</span>, and automation.</h1>
-            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">We bridge the gap between small business and big tech. Save time, increase revenue, and automate your growth.</p>
-            <button onclick="showPage('services')" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-xl">Get Started</button>
-        </header>
-    </main>
-
-    <section id="about" class="page-section py-20 px-6 max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div class="bg-slate-200 aspect-square rounded-3xl overflow-hidden shadow-inner flex items-center justify-center border-4 border-white">
-                <span class="text-slate-400 italic text-sm">[Your Professional Photo Here]</span>
+    <header class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 hero-text tracking-tight">
+                Future-proof your business with websites, <span class="ai-accent text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">AI</span>, and automation.
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+                Helping South African SMBs save time and grow using modern digital tools that work while you sleep.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#package" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition">View Growth Package</a>
+                <a href="#about" class="bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-bold hover:bg-slate-200 transition">Meet the Founder</a>
             </div>
-            <div>
-                <h2 class="text-4xl font-bold mb-6">Innovative Solutions by Next<span class="ai-accent">Waive</span></h2>
-                <p class="text-slate-600 mb-6 leading-relaxed">Hi, I'm [Your Name]. I founded NextWaive to help local businesses thrive in a digital-first world. With deep expertise in web architecture and AI integration, I transform how you communicate with your customers.</p>
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <div class="bg-cyan-100 p-2 rounded-lg mr-4"><i class="fas fa-eye text-cyan-600"></i></div>
-                        <p><strong>Vision:</strong> Cutting-edge tech for every SMB.</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-slate-300 rounded-3xl overflow-hidden shadow-2xl">
+                        <div class="w-full h-full flex items-center justify-center text-slate-500 italic p-8 text-center">
+                            [Photo of Tanit Ansara]
+                        </div>
                     </div>
-                    <div class="flex items-start">
-                        <div class="bg-cyan-100 p-2 rounded-lg mr-4"><i class="fas fa-bullseye text-cyan-600"></i></div>
-                        <p><strong>Mission:</strong> To automate the mundane so you can focus on the human.</p>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
+                        <p class="font-bold text-sky-600">Tanit Ansara</p>
+                        <p class="text-sm text-slate-500">Founder, NextWaive</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Built by a student, designed for <span class="text-sky-600">scale</span>.</h2>
+                    <div class="space-y-4 text-slate-600 leading-relaxed">
+                        <p>Hi, I’m <strong>Tanit Ansara</strong>, a student at the University of Cape Town (UCT) and the founder of NextWaive. I’m passionate about helping small businesses stay ahead of technology by combining smart website design with AI-powered automation.</p>
+                        <p>With experience in web development and WhatsApp automation, I handle the tech so you can focus on what you do best—serving your clients.</p>
+                        <blockquote class="border-l-4 border-sky-500 pl-4 italic text-slate-900 font-medium my-6">
+                            “Technology should simplify your business, not complicate it. That’s why we build solutions that work while you sleep.”
+                        </blockquote>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="page-section py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12 text-center">Recent <span class="ai-accent">Work</span></h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="group cursor-pointer">
-                <div class="bg-slate-200 h-64 rounded-2xl mb-4 overflow-hidden shadow-sm border border-slate-200 flex items-center justify-center">
-                    <span class="text-slate-400">[Salon Demo Screenshot]</span>
-                </div>
-                <h3 class="text-xl font-bold">Luxe Hair Salon</h3>
-                <p class="text-slate-500">Booking automation + AI WhatsApp bot.</p>
+    <section id="package" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold mb-4">Our Flagship <span class="text-sky-600">Growth Package</span></h2>
+                <p class="text-slate-500">The all-in-one digital transformation for your business.</p>
             </div>
-            <div class="group cursor-pointer">
-                <div class="bg-slate-200 h-64 rounded-2xl mb-4 overflow-hidden shadow-sm border border-slate-200 flex items-center justify-center">
-                    <span class="text-slate-400">[E-com Demo Screenshot]</span>
-                </div>
-                <h3 class="text-xl font-bold">Urban Kicks Store</h3>
-                <p class="text-slate-500">Full Shopify setup & payment integration.</p>
-            </div>
-            <div class="group cursor-pointer">
-                <div class="bg-slate-200 h-64 rounded-2xl mb-4 overflow-hidden shadow-sm border border-slate-200 flex items-center justify-center">
-                    <span class="text-slate-400">[Restaurant Demo Screenshot]</span>
-                </div>
-                <h3 class="text-xl font-bold">The Daily Grind</h3>
-                <p class="text-slate-500">Lead capture and automated email newsletters.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="page-section py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12 text-center">Service <span class="ai-accent">Menu</span></h2>
-        <div class="overflow-x-auto bg-white rounded-3xl shadow-sm border border-slate-200 mb-16">
-            <table class="w-full text-left pricing-table">
-                <thead class="bg-slate-900 text-white">
-                    <tr>
-                        <th class="p-6">Service</th>
-                        <th class="p-6">Setup Fee</th>
-                        <th class="p-6">Monthly</th>
-                        <th class="p-6">Notes</th>
-                    </tr>
-                </thead>
-                <tbody class="text-slate-700">
-                    <tr>
-                        <td class="p-6 font-bold">Website</td>
-                        <td class="p-6">R4,500</td>
-                        <td class="p-6">R350</td>
-                        <td class="p-6 text-sm">5-page responsive site</td>
-                    </tr>
-                    <tr>
-                        <td class="p-6 font-bold">AI Automation</td>
-                        <td class="p-6">R4,000</td>
-                        <td class="p-6">R400</td>
-                        <td class="p-6 text-sm">WhatsApp + Website Bot</td>
-                    </tr>
-                    <tr>
-                        <td class="p-6 font-bold">Social Media</td>
-                        <td class="p-6">R2,500</td>
-                        <td class="p-6">R500</td>
-                        <td class="p-6 text-sm">8-12 posts/month</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="bg-white p-10 rounded-3xl border-2 border-slate-200">
-                <h3 class="text-2xl font-bold mb-4">Starter Bundle</h3>
-                <p class="text-4xl font-black mb-6">R6,000</p>
-                <p class="text-slate-500 mb-8">Website + AI Automation Setup</p>
-                <button onclick="showPage('contact')" class="w-full py-4 bg-slate-900 text-white rounded-xl font-bold">Inquire Now</button>
-            </div>
-            <div class="bg-slate-900 p-10 rounded-3xl text-white">
-                <h3 class="text-2xl font-bold mb-4">Growth Bundle</h3>
-                <p class="text-4xl font-black mb-6 text-cyan-400">R8,000</p>
-                <p class="text-slate-400 mb-8">Website + AI + Social Media</p>
-                <button onclick="showPage('contact')" class="w-full py-4 bg-white text-slate-900 rounded-xl font-bold">Inquire Now</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="page-section py-20 px-6 max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12 text-center">Let's <span class="ai-accent">Talk</span></h2>
-        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100">
-            <form class="space-y-6">
-                <div>
-                    <label class="block text-sm font-bold mb-2">Full Name</label>
-                    <input type="text" class="w-full p-4 rounded-xl border border-slate-200 bg-slate-50 focus:ring-2 focus:ring-cyan-400 outline-none" placeholder="John Doe">
-                </div>
-                <div>
-                    <label class="block text-sm font-bold mb-2">Email Address</label>
-                    <input type="email" class="w-full p-4 rounded-xl border border-slate-200 bg-slate-50 focus:ring-2 focus:ring-cyan-400 outline-none" placeholder="john@company.com">
-                </div>
-                <div>
-                    <label class="block text-sm font-bold mb-2">How can we help?</label>
-                    <textarea class="w-full p-4 rounded-xl border border-slate-200 bg-slate-50 h-32 focus:ring-2 focus:ring-cyan-400 outline-none" placeholder="Tell us about your project..."></textarea>
-                </div>
-                <button type="submit" class="w-full py-4 bg-slate-900 text-white rounded-xl font-bold shadow-lg">Send Message</button>
-            </form>
-            <div class="mt-12 pt-12 border-t border-slate-100 text-center">
-                <p class="text-slate-500 mb-4">Or reach out directly:</p>
-                <div class="flex justify-center space-x-8">
-                    <a href="#" class="text-2xl hover:text-cyan-500 transition"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="text-2xl hover:text-cyan-500 transition"><i class="far fa-envelope"></i></a>
+            <div class="bg-slate-900 rounded-[2.5rem] p-8 md:p-16 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-sky-500 text-white px-6 py-2 rounded-bl-2xl font-bold text-sm">MOST POPULAR</div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <ul class="space-y-5">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-3"></i> 5-Page Professional Website</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-3"></i> WhatsApp AI Automation</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-3"></i> Social Media Management</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-3"></i> Lead Capture System</li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-right border-t md:border-t-0 md:border-l border-slate-700 pt-8 md:pt-0 md:pl-12">
+                        <p class="text-slate-400 uppercase tracking-widest text-sm mb-2">Investment</p>
+                        <div class="text-6xl font-black mb-2">R8,000</div>
+                        <p class="text-slate-400 mb-8">+ R1,000 monthly maintenance</p>
+                        <a href="https://wa.me/27784898868" class="block w-full bg-sky-500 hover:bg-sky-400 text-white text-center py-4 rounded-xl font-bold transition">Claim This Package</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-slate-400 text-sm">
-        &copy; 2026 NextWaive Tech Solutions. All rights reserved.
+    <section id="portfolio" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Past <span class="text-sky-600">Projects</span></h2>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+                    <div class="bg-slate-100 aspect-video rounded-2xl mb-4 flex items-center justify-center text-slate-400">[Website Project 1]</div>
+                    <h3 class="font-bold text-xl">Wix Design Solution</h3>
+                    <p class="text-slate-500 text-sm">Clean, responsive Wix site built for service-based businesses.</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+                    <div class="bg-slate-100 aspect-video rounded-2xl mb-4 flex items-center justify-center text-slate-400">[Website Project 2]</div>
+                    <h3 class="font-bold text-xl">E-commerce Layout</h3>
+                    <p class="text-slate-500 text-sm">Showcasing user-friendly navigation and high-conversion product pages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 mb-20">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Let's work <span class="text-sky-400">together.</span></h2>
+                    <p class="text-slate-400 mb-10 text-lg">Ready to automate your business? Send me a message and I'll get back to you within 24 hours.</p>
+                    <div class="space-y-4">
+                        <a href="mailto:ansara.tanit@gmail.com" class="flex items-center text-xl hover:text-sky-400 transition"><i class="far fa-envelope mr-4"></i> ansara.tanit@gmail.com</a>
+                        <a href="tel:0784898868" class="flex items-center text-xl hover:text-sky-400 transition"><i class="fas fa-phone-alt mr-4"></i> 078 489 8868</a>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl backdrop-blur-sm border border-white/10">
+                    <form action="mailto:ansara.tanit@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full bg-white/10 border border-white/20 p-4 rounded-xl focus:outline-none focus:border-sky-400 transition">
+                        <input type="email" placeholder="Your Email" class="w-full bg-white/10 border border-white/20 p-4 rounded-xl focus:outline-none focus:border-sky-400 transition">
+                        <textarea placeholder="Tell me about your business" class="w-full bg-white/10 border border-white/20 p-4 rounded-xl h-32 focus:outline-none focus:border-sky-400 transition"></textarea>
+                        <button class="w-full bg-sky-500 py-4 rounded-xl font-bold hover:bg-sky-400 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; 2026 NextWaive Tech Solutions. Founded by Tanit Ansara.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0 font-medium">
+                    <a href="https://wa.me/27784898868" class="hover:text-white">WhatsApp</a>
+                    <a href="#about" class="hover:text-white">About</a>
+                    <a href="#portfolio" class="hover:text-white">Portfolio</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        function showPage(pageId) {
-            // Hide all pages
-            document.querySelectorAll('.page-section').forEach(section => {
-                section.classList.remove('active-section');
-            });
-            // Show requested page
-            document.getElementById(pageId).classList.add('active-section');
-            // Scroll to top
-            window.scrollTo(0, 0);
-        }
-    </script>
 </body>
 </html>

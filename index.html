@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextWaive Digital Solutions | AI & Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .ai-accent { color: #00d4ff; text-shadow: 0 0 10px rgba(0, 212, 255, 0.3); }
+        .nav-link { cursor: pointer; transition: color 0.3s; }
+        .nav-link:hover { color: #00d4ff; }
+        .page-section { display: none; }
+        .active-section { display: block; animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .pricing-table tr:nth-child(even) { background-color: #f8fafc; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-800 tracking-tighter text-slate-900 cursor-pointer" onclick="showPage('home')">
+                Next<span class="ai-accent">Waive</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wide">
+                <span class="nav-link" onclick="showPage('home')">Home</span>
+                <span class="nav-link" onclick="showPage('about')">About</span>
+                <span class="nav-link" onclick="showPage('portfolio')">Portfolio</span>
+                <span class="nav-link" onclick="showPage('services')">Services</span>
+                <span class="nav-link" onclick="showPage('contact')">Contact</span>
+            </div>
+            <a href="https://wa.me/yournumber" class="bg-slate-900 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-cyan-600 transition">Free Demo</a>
+        </div>
+    </nav>
+
+    <main id="home" class="page-section active-section">
+        <header class="py-24 px-6 text-center max-w-5xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-black mb-8 leading-tight">Future-proof your business with websites, <span class="ai-accent">AI</span>, and automation.</h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">We bridge the gap between small business and big tech. Save time, increase revenue, and automate your growth.</p>
+            <button onclick="showPage('services')" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-xl">Get Started</button>
+        </header>
+    </main>
+
+    <section id="about" class="page-section py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="bg-slate-200 aspect-square rounded-3xl overflow-hidden shadow-inner flex items-center justify-center border-4 border-white">
+                <span class="text-slate-400 italic text-sm">[Your Professional Photo Here]</span>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-6">Innovative Solutions by Next<span class="ai-accent">Waive</span></h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">Hi, I'm [Your Name]. I founded NextWaive to help local businesses thrive in a digital-first world. With deep expertise in web architecture and AI integration, I transform how you communicate with your customers.</p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-cyan-100 p-2 rounded-lg mr-4"><i class="fas fa-eye text-cyan-600"></i></div>
+                        <p><strong>Vision:</strong> Cutting-edge tech for every SMB.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-cyan-100 p-2 rounded-lg mr-4"><i class="fas fa-bullseye text-cyan-600"></i></div>
+                        <p><strong>Mission:</strong> To automate the mundane so you can focus on the human.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="page-section py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center">Recent <span class="ai-accent">Work</span></h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="group cursor-pointer">
+                <div class="bg-slate-200 h-64 rounded-2xl mb-4 overflow-hidden shadow-sm border border-slate-200 flex items-center justify-center">
+                    <span class="text-slate-400">[Salon Demo Screenshot]</span>
+                </div>
+                <h3 class="text-xl font-bold">Luxe Hair Salon</h3>
+                <p class="text-slate-500">Booking automation + AI WhatsApp bot.</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="bg-slate-200 h-64 rounded-2xl mb-4 overflow-hidden shadow-sm border border-slate-200 flex items-center justify-center">
+                    <span class="text-slate-400">[E-com Demo Screenshot]</span>
+                </div>
+                <h3 class="text-xl font-bold">Urban Kicks Store</h3>
+                <p class="text-slate-500">Full Shopify setup & payment integration.</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="bg-slate-200 h-64 rounded-2xl mb-4 overflow-hidden shadow-sm border border-slate-200 flex items-center justify-center">
+                    <span class="text-slate-400">[Restaurant Demo Screenshot]</span>
+                </div>
+                <h3 class="text-xl font-bold">The Daily Grind</h3>
+                <p class="text-slate-500">Lead capture and automated email newsletters.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="page-section py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center">Service <span class="ai-accent">Menu</span></h2>
+        <div class="overflow-x-auto bg-white rounded-3xl shadow-sm border border-slate-200 mb-16">
+            <table class="w-full text-left pricing-table">
+                <thead class="bg-slate-900 text-white">
+                    <tr>
+                        <th class="p-6">Service</th>
+                        <th class="p-6">Setup Fee</th>
+                        <th class="p-6">Monthly</th>
+                        <th class="p-6">Notes</th>
+                    </tr>
+                </thead>
+                <tbody class="text-slate-700">
+                    <tr>
+                        <td class="p-6 font-bold">Website</td>
+                        <td class="p-6">R4,500</td>
+                        <td class="p-6">R350</td>
+                        <td class="p-6 text-sm">5-page responsive site</td>
+                    </tr>
+                    <tr>
+                        <td class="p-6 font-bold">AI Automation</td>
+                        <td class="p-6">R4,000</td>
+                        <td class="p-6">R400</td>
+                        <td class="p-6 text-sm">WhatsApp + Website Bot</td>
+                    </tr>
+                    <tr>
+                        <td class="p-6 font-bold">Social Media</td>
+                        <td class="p-6">R2,500</td>
+                        <td class="p-6">R500</td>
+                        <td class="p-6 text-sm">8-12 posts/month</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white p-10 rounded-3xl border-2 border-slate-200">
+                <h3 class="text-2xl font-bold mb-4">Starter Bundle</h3>
+                <p class="text-4xl font-black mb-6">R6,000</p>
+                <p class="text-slate-500 mb-8">Website + AI Automation Setup</p>
+                <button onclick="showPage('contact')" class="w-full py-4 bg-slate-900 text-white rounded-xl font-bold">Inquire Now</button>
+            </div>
+            <div class="bg-slate-900 p-10 rounded-3xl text-white">
+                <h3 class="text-2xl font-bold mb-4">Growth Bundle</h3>
+                <p class="text-4xl font-black mb-6 text-cyan-400">R8,000</p>
+                <p class="text-slate-400 mb-8">Website + AI + Social Media</p>
+                <button onclick="showPage('contact')" class="w-full py-4 bg-white text-slate-900 rounded-xl font-bold">Inquire Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="page-section py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center">Let's <span class="ai-accent">Talk</span></h2>
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100">
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold mb-2">Full Name</label>
+                    <input type="text" class="w-full p-4 rounded-xl border border-slate-200 bg-slate-50 focus:ring-2 focus:ring-cyan-400 outline-none" placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">Email Address</label>
+                    <input type="email" class="w-full p-4 rounded-xl border border-slate-200 bg-slate-50 focus:ring-2 focus:ring-cyan-400 outline-none" placeholder="john@company.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">How can we help?</label>
+                    <textarea class="w-full p-4 rounded-xl border border-slate-200 bg-slate-50 h-32 focus:ring-2 focus:ring-cyan-400 outline-none" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-4 bg-slate-900 text-white rounded-xl font-bold shadow-lg">Send Message</button>
+            </form>
+            <div class="mt-12 pt-12 border-t border-slate-100 text-center">
+                <p class="text-slate-500 mb-4">Or reach out directly:</p>
+                <div class="flex justify-center space-x-8">
+                    <a href="#" class="text-2xl hover:text-cyan-500 transition"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-2xl hover:text-cyan-500 transition"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        &copy; 2026 NextWaive Tech Solutions. All rights reserved.
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active-section');
+            });
+            // Show requested page
+            document.getElementById(pageId).classList.add('active-section');
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

@@ -1,26 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="container navbar__inner">
-                <div className="navbar__logo">
+                <Link to="/" className="navbar__logo">
                     Next<span className="ai-accent">Waive</span>
-                </div>
+                </Link>
 
                 <ul className="navbar__links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#solutions">Services</a></li>
-                    <li><a href="#package">Full Package</a></li>
-                    <li><a href="#book" className="active">Book a Call</a></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/services#package">Full Package</Link></li>
+                    <li><Link to="/book" className="active">Book a Call</Link></li>
                 </ul>
 
-                <a
-                    href="https://wa.me/27784898868"
-                    className="navbar__cta"
-                    target="_blank"
-                    rel="noreferrer"
-                >
+                <a href="https://wa.me/27784898868" className="navbar__cta"
+                   target="_blank" rel="noreferrer">
                     WhatsApp Me
                 </a>
             </div>

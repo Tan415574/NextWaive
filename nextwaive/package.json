@@ -4,8 +4,8 @@
   "start": "react-scripts start",
   "build": "react-scripts build",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
+  "deploy": "gh-pages -b main -d build"
+},
   "name": "nextwaive",
   "version": "0.1.0",
   "private": true,

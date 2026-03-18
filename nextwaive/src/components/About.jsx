@@ -8,7 +8,7 @@ export default function About() {
                     {/* Image */}
                     <div className="about__image-wrapper">
                         <div className="about__image-frame">
-                            <img src="/Images/TanitA.jpg" alt="Tanit Ansara" />
+                            <img src={process.env.PUBLIC_URL + "/Images/TanitA.jpg"} alt="Tanit Ansara" />
                         </div>
                         <div className="about__name-card">
                             <h3>Tanit Ansara</h3>

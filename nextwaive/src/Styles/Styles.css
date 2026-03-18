@@ -92,7 +92,7 @@ img {
 
 /* ============================================
    NAVBAR
-   ============================================ */
+   ============================================
 
 .navbar {
     position: fixed;
@@ -160,7 +160,7 @@ img {
 .navbar__cta:hover {
     background-color: var(--color-sky-600);
 }
-
+*/
 /* ============================================
    HERO
    ============================================ */
@@ -678,7 +678,7 @@ img {
    ============================================ */
 
 .footer {
-    background-color: var(--color-slate-50);
+    background-color: #96968f;
     padding-top: 6rem;
     padding-bottom: 3rem;
     padding-inline: 1.5rem;
@@ -706,7 +706,7 @@ img {
 .footer__contacts {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     gap: 2rem;
     margin-bottom: 5rem;
     font-weight: 700;

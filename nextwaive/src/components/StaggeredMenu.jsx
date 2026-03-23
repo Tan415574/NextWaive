@@ -309,15 +309,15 @@ export const StaggeredMenu = ({
 
             <header className="staggered-menu-header" aria-label="Main navigation header">
                 <div className="sm-logo" aria-label="Logo">
-                    <Link to="/" style={{ pointerEvents: 'auto' }}>
-                        <img
-                            src={logoUrl}
-                            alt="Logo"
-                            className="sm-logo-img"
-                            draggable={false}
-                            width={110}
-                            height={24}
-                        />
+                    <Link to="/" style={{ pointerEvents: 'auto', textDecoration: 'none' }}>
+                        <span style={{
+                            fontSize: '1.25rem',
+                            fontWeight: 800,
+                            letterSpacing: '-0.04em',
+                            color: '#22222',
+                        }}>
+                            Next<span style={{ color: '#0ea5e9' }}>Waive</span>
+                        </span>
                     </Link>
                 </div>
                 <button

@@ -27,7 +27,7 @@ export default function Navbar() {
                 openMenuButtonColor="#0f172a"
                 changeMenuColorOnOpen={true}
                 colors={['#bae6fd', '#0ea5e9']}
-                logoUrl={process.env.PUBLIC_URL + "/Images/NextWaiveLogo.png"}
+                logoUrl={process.env.PUBLIC_URL + "/Images/NextWaive.png"}
                 accentColor="#0ea5e9"
                 isFixed={false}
                 closeOnClickAway={true}

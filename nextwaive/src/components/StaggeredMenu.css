@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.75em 1.5em;
-    background-color: #0ea5e9;
+    background-color: #edfbfd;
     pointer-events: none;
     z-index: 20;
 }
@@ -43,14 +43,6 @@
     align-items: center;
     user-select: none;
 }
-
-.sm-logo-img {
-    display: block;
-    height: 32px;
-    width: auto;
-    object-fit: contain;
-}
-
 .sm-toggle {
     position: relative;
     display: inline-flex;

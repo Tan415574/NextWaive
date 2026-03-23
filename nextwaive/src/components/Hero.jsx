@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
+import TextType from './TextType';
 
 export default function Hero() {
     return (
@@ -8,8 +9,19 @@ export default function Hero() {
                 <span className="hero__badge">Modernizing South African SMBs</span>
 
                 <h1 className="hero__heading">
-                    Websites that sell. <br />
-                    <span className="ai-accent">AI that automates.</span>
+                    <TextType
+                        text={[
+                            'Websites that sell.',
+                            'AI that automates.',
+                        ]}
+                        typingSpeed={60}
+                        deletingSpeed={40}
+                        pauseDuration={2000}
+                        showCursor={true}
+                        cursorCharacter="|"
+                        cursorBlinkDuration={0.5}
+                        loop={true}
+                    />
                 </h1>
 
                 <p className="hero__subtext">

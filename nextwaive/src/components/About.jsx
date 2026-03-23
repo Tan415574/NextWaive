@@ -19,21 +19,23 @@ export default function About() {
                     {/* Content */}
                     <div className="about__content">
                         <h2 className="about__heading">
-                            Built at UCT. <br />
+                            Two UCT students
+                            on a mission. <br />
                             <span className="ai-accent">Scaled for Business.</span>
                         </h2>
 
                         <div className="about__body">
                             <p>
-                                I'm Tanit, a student at the{' '}
-                                <strong>University of Cape Town</strong> and the founder of
-                                NextWaive. I saw too many local businesses struggling with
-                                outdated tech, so I decided to bridge the gap.
+                                We're Tanit and Tristan, both studying Information Systems at the{' '}
+                                <strong>University of Cape Town</strong>.
+                                We started NextWaive because we kept seeing local businesses stuck with outdated tech,
+                                no online presence, and hours wasted on stuff that could easily be automated.
                             </p>
                             <p>
-                                I combine modern web architecture with cutting-edge AI to create
-                                systems that don't just "look good" — they actively save you
-                                hours of manual work every single week.
+                                So we decided to do something about it.
+                                We combine <strong>modern web development</strong> with
+                                <strong>AI and automation</strong> to build tools that actually work for your business.
+                                Not just a pretty website, but systems that save you real time and bring in real customers.
                             </p>
                             <p className="about__quote">
                                 "Technology should simplify your business, not complicate it."

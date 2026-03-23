@@ -67,112 +67,41 @@ img {
 }
 
 .container {
-    max-width: 80rem; /* max-w-7xl */
+    max-width: 80rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
 }
 
 .container--6xl {
-    max-width: 72rem; /* max-w-6xl */
+    max-width: 72rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
 }
 
 .container--5xl {
-    max-width: 64rem; /* max-w-5xl */
+    max-width: 64rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
 }
 
 .container--4xl {
-    max-width: 56rem; /* max-w-4xl */
+    max-width: 56rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
 }
 
 /* ============================================
-   NAVBAR
-   ============================================
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--color-slate-100);
-}
-
-.navbar__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 1rem;
-}
-
-.navbar__logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.05em;
-}
-
-.navbar__links {
-    display: none;
-    gap: 2rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    color: var(--color-slate-600);
-    list-style: none;
-}
-
-@media (min-width: 768px) {
-    .navbar__links {
-        display: flex;
-    }
-}
-
-.navbar__links a {
-    transition: color 0.3s;
-    cursor: pointer;
-}
-
-.navbar__links a:hover {
-    color: var(--color-sky-500);
-}
-
-.navbar__links a.active {
-    color: var(--color-sky-600);
-}
-
-.navbar__cta {
-    background-color: var(--color-sky-500);
-    color: var(--color-white);
-    padding: 0.5rem 1.5rem;
-    border-radius: var(--radius-full);
-    font-size: 0.875rem;
-    font-weight: 700;
-    transition: background-color 0.2s;
-    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.35);
-}
-
-.navbar__cta:hover {
-    background-color: var(--color-sky-600);
-}
-*/
-/* ============================================
-   HERO
+   HERO — reduced top padding
    ============================================ */
 
 .hero {
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
     padding-inline: 1.5rem;
 }
 
 .hero__inner {
-    max-width: 64rem; /* max-w-5xl */
+    max-width: 64rem;
     margin-inline: auto;
     text-align: center;
 }
@@ -185,24 +114,24 @@ img {
     border-radius: var(--radius-full);
     font-size: 0.75rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
 .hero__heading {
-    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    font-size: clamp(2rem, 6vw, 4rem); /* slightly smaller */
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.1;
     letter-spacing: -0.04em;
     color: var(--color-slate-900);
 }
 
 .hero__subtext {
-    font-size: 1.25rem;
+    font-size: 1.125rem; /* was 1.25rem */
     color: var(--color-slate-500);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     max-width: 42rem;
     margin-inline: auto;
     line-height: 1.7;
@@ -227,10 +156,10 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2.5rem;
+    padding: 0.875rem 2rem; /* slightly smaller */
     border-radius: var(--radius-2xl);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: background-color 0.2s, color 0.2s;
     cursor: pointer;
     border: none;
@@ -267,8 +196,8 @@ img {
 }
 
 .btn--sky-lg {
-    padding: 1.25rem 3rem;
-    font-size: 1.125rem;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
     font-weight: 800;
 }
 
@@ -277,7 +206,7 @@ img {
    ============================================ */
 
 .about {
-    padding-block: 6rem;
+    padding-block: 5rem;
     background-color: var(--color-slate-50);
     border-top: 1px solid var(--color-slate-100);
     border-bottom: 1px solid var(--color-slate-100);
@@ -380,13 +309,13 @@ img {
    ============================================ */
 
 .services {
-    padding-block: 6rem;
+    padding-block: 5rem;
     background-color: var(--color-white);
 }
 
 .services__header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .services__heading {
@@ -473,7 +402,7 @@ img {
 }
 
 .services__footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -509,7 +438,7 @@ img {
    ============================================ */
 
 .package {
-    padding-block: 6rem;
+    padding-block: 5rem;
     background-color: var(--color-slate-900);
     color: var(--color-white);
     position: relative;
@@ -518,7 +447,7 @@ img {
 
 .package__header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .package__badge {
@@ -555,7 +484,7 @@ img {
 
 @media (min-width: 768px) {
     .package__card {
-        padding: 5rem;
+        padding: 4rem; /* was 5rem */
     }
 }
 
@@ -576,7 +505,7 @@ img {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     font-size: 1.125rem;
 }
 
@@ -601,7 +530,7 @@ img {
 }
 
 .package__price {
-    font-size: 4.5rem;
+    font-size: 4rem; /* was 4.5rem */
     font-weight: 900;
     letter-spacing: -0.05em;
     color: var(--color-white);
@@ -611,9 +540,9 @@ img {
 
 .package__maintenance {
     color: var(--color-slate-400);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 /* ============================================
@@ -621,7 +550,7 @@ img {
    ============================================ */
 
 .booking {
-    padding-block: 6rem;
+    padding-block: 5rem;
     background-color: var(--color-white);
 }
 
@@ -630,17 +559,17 @@ img {
 }
 
 .booking__heading {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     letter-spacing: -0.04em;
     color: var(--color-slate-900);
 }
 
 .booking__subtext {
     color: var(--color-slate-500);
-    font-size: 1.125rem;
-    margin-bottom: 3rem;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .booking__iframe-wrapper {
@@ -660,8 +589,8 @@ img {
 }
 
 .booking__powered {
-    margin-top: 2.5rem;
-    font-size: 0.875rem;
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
     color: var(--color-slate-400);
     font-weight: 500;
     text-transform: uppercase;
@@ -674,68 +603,92 @@ img {
 }
 
 /* ============================================
-   FOOTER
+   FOOTER — polished and compact
    ============================================ */
 
 .footer {
-    background-color: #dededc;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    background-color: var(--color-slate-900);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
     padding-inline: 1.5rem;
     border-top: 1px solid var(--color-slate-100);
 }
 
 .footer__inner {
-    text-align: left;
+    max-width: 72rem;
+    margin-inline: auto;
 }
 
-.footer__heading {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 900;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.05em;
-    color: var(--color-slate-900);
+.footer__top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.footer__heading .underline {
-    color: var(--color-sky-600);
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
+@media (min-width: 768px) {
+    .footer__top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer__logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--color-white);
+}
+
+.footer__logo span {
+    color: var(--color-sky-500);
+}
+
+.footer__tagline {
+    font-size: 0.875rem;
+    color: var(--color-slate-400);
+    max-width: 24rem;
+    line-height: 1.6;
 }
 
 .footer__contacts {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap: 2rem;
-    margin-bottom: 5rem;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--color-slate-800);
+    gap: 0.75rem;
     list-style: none;
 }
 
-@media (min-width: 768px) {
-    .footer__contacts {
-        flex-direction: row;
-    }
+.footer__contacts a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-slate-300);
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer__contacts a:hover {
-    color: var(--color-sky-600);
-    transition: color 0.3s;
+    color: var(--color-sky-400);
 }
 
 .footer__bottom {
-    padding-top: 3rem;
-    border-top: 1px solid var(--color-slate-200);
-    color: var(--color-slate-400);
-    font-size: 0.875rem;
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    color: var(--color-slate-500);
+    font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
@@ -746,13 +699,14 @@ img {
 
 .footer__nav {
     display: flex;
-    gap: 2rem;
-    font-weight: 700;
-    color: var(--color-slate-600);
+    gap: 1.5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--color-slate-400);
     list-style: none;
 }
 
 .footer__nav a:hover {
-    color: var(--color-sky-500);
+    color: var(--color-sky-400);
     transition: color 0.2s;
 }

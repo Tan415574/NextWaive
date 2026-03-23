@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NextWaive/static/css/main.5a971293.css",
-    "main.js": "/NextWaive/static/js/main.ce6af142.js",
+    "main.js": "/NextWaive/static/js/main.81bbb278.js",
     "static/js/453.74dd7dac.chunk.js": "/NextWaive/static/js/453.74dd7dac.chunk.js",
     "static/media/fa-solid-900.woff2": "/NextWaive/static/media/fa-solid-900.ce9a3fa740bd60b4ac3b.woff2",
     "static/media/fa-brands-400.woff2": "/NextWaive/static/media/fa-brands-400.f276979f97f1cf375d23.woff2",
@@ -9,11 +9,11 @@
     "static/media/fa-v4compatibility.woff2": "/NextWaive/static/media/fa-v4compatibility.296da06936a3373940c8.woff2",
     "index.html": "/NextWaive/index.html",
     "main.5a971293.css.map": "/NextWaive/static/css/main.5a971293.css.map",
-    "main.ce6af142.js.map": "/NextWaive/static/js/main.ce6af142.js.map",
+    "main.81bbb278.js.map": "/NextWaive/static/js/main.81bbb278.js.map",
     "453.74dd7dac.chunk.js.map": "/NextWaive/static/js/453.74dd7dac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a971293.css",
-    "static/js/main.ce6af142.js"
+    "static/js/main.81bbb278.js"
   ]
 }
